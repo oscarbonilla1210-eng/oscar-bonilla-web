@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: es
+site_url: https://oscarbonillaconsultor.com
+display_url: https://oscarbonillaconsultor.com
+logo_url: /assets/oscar-bonilla-logo.png
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "articulos"
+    label: "Artículos del blog"
+    folder: "blog/articulos"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descripción SEO", name: "description", widget: "text" }
+      - { label: "Fecha de publicación", name: "date", widget: "datetime" }
+      - { label: "Categoría", name: "category", widget: "select", options: ["Marketing digital y Ads", "Inteligencia artificial aplicada", "Finanzas y auditoría forense"] }
+      - { label: "Imagen destacada", name: "thumbnail", widget: "image", required: false }
+      - { label: "Resumen", name: "excerpt", widget: "text" }
+      - { label: "Publicar", name: "published", widget: "boolean", default: false }
+      - { label: "Contenido", name: "body", widget: "markdown" }
