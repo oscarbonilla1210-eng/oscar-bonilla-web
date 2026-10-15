@@ -64,12 +64,18 @@
 @media(max-width:900px){.nav-links{gap:14px;font-size:.8rem}.hero-grid{grid-template-columns:1fr .5fr;gap:30px}.hero-side .big{font-size:3.7rem}.about-grid{gap:35px}.logo-grid{grid-template-columns:repeat(3,1fr)}.contact-grid{gap:25px}}
 @media(max-width:700px){.whatsapp-float{right:14px;bottom:18px;z-index:99999;box-shadow:0 8px 26px rgba(0,0,0,.35)}.container{width:min(100% - 32px,1160px)}.section{padding:70px 0}.nav-inner{min-height:68px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:68px;left:0;right:0;padding:20px 24px;background:var(--navy);flex-direction:column;align-items:stretch;border-top:1px solid rgba(255,255,255,.1)}.nav-links.open{display:flex}.nav-links a{padding:8px 0;font-size:.95rem}.nav-cta{display:none}.hero{padding:75px 0 58px}.hero-grid{grid-template-columns:1fr;gap:38px}.hero-side{border-left:0;border-top:1px solid rgba(198,166,107,.5);padding:25px 0 0;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center}.hero-side .big{font-size:3.3rem}.hero-side .rule{display:none}.metric-grid{grid-template-columns:repeat(2,1fr);row-gap:15px}.metric{padding:14px 15px;border-right:0;border-bottom:1px solid #d9d4ca}.metric:nth-child(odd){border-right:1px solid #d9d4ca;padding-left:0}.metric:nth-child(n+3){border-bottom:0}.metric strong{font-size:2.25rem}.metric span{font-size:.8rem}.about-grid,.training-grid,.contact-grid{grid-template-columns:1fr;gap:28px}.profile-card{min-height:300px}.service-grid,.education-grid{grid-template-columns:1fr}.method-grid{grid-template-columns:1fr;gap:25px}.logo-grid{display:flex;overflow-x:auto;gap:0;scroll-snap-type:x proximity;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}.logo-cell{flex:0 0 min(72vw,220px);min-height:96px;scroll-snap-align:start;border-top:0}.topic-list{grid-template-columns:1fr}.training-highlight{padding:25px}.contact-info,.contact-form{padding:26px}.footer-inner{flex-direction:column;align-items:flex-start}.hero h1{font-size:clamp(2.5rem,12vw,4rem)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+
+.brand-photo{width:42px;height:42px;flex:none;display:block;object-fit:cover;object-position:center 25%;border:1px solid var(--gold);border-radius:50%}
+.hero-photo{display:block;width:min(100%,250px);aspect-ratio:4/5;height:auto;object-fit:cover;object-position:center 25%;border:1px solid rgba(198,166,107,.7)}
+.profile-photo{display:block;width:100%;min-height:260px;aspect-ratio:4/5;height:auto;object-fit:cover;object-position:center 25%}
+@media(max-width:700px){.hero-photo{width:115px;aspect-ratio:1/1;border-radius:50%}.profile-photo{min-height:220px}}
+
 </style>
 </head>
 <body>
 <header class="nav">
   <div class="container nav-inner">
-    <a class="brand" href="#inicio" aria-label="Oscar Bonilla, inicio"><span class="brand-photo-placeholder" role="img" aria-label="Espacio para fotografía profesional de Oscar Bonilla">Foto</span><span>Oscar Bonilla<small>Capacitación · IA aplicada · Marketing digital</small></span></a>
+    <a class="brand" href="#inicio" aria-label="Oscar Bonilla, inicio"><img class="brand-photo" src="/oscar-bonilla.jpg.png" alt="Oscar Bonilla" width="42" height="42"><span>Oscar Bonilla<small>Capacitación · IA aplicada · Marketing digital</small></span></a>
     <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">Menú</button>
     <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
       <a href="#perfil">Perfil</a><a href="#servicios">Servicios</a><a href="#experiencia">Experiencia</a><a href="#formacion">Formación</a><a href="blog/">Blog</a>
@@ -87,7 +93,7 @@
         <div class="hero-actions"><a class="btn btn-primary" href="#servicios">Explorar servicios ↗</a><a class="btn btn-outline" href="#perfil">Conocer mi trayectoria</a></div>
       </div>
       <aside class="hero-side" aria-label="Fotografía profesional de Oscar Bonilla">
-        <div class="hero-photo-placeholder" role="img" aria-label="Espacio para fotografía profesional de Oscar Bonilla, capacitador en Costa Rica especializado en IA aplicada al marketing y auditoría forense"><span>Fotografía profesional</span></div>
+        <img class="hero-photo" src="/oscar-bonilla.jpg.png" alt="Oscar Bonilla, capacitador y consultor profesional en Costa Rica" width="500" height="625" fetchpriority="high">
       </aside>
     </div>
   </section>
@@ -101,7 +107,7 @@
   </section>
   <section class="section" id="perfil">
     <div class="container about-grid">
-      <div class="profile-card"><div class="portrait-placeholder" role="img" aria-label="Espacio para fotografía profesional de Oscar Bonilla, especialista en capacitación en Costa Rica, IA aplicada al marketing y auditoría forense"><span>Fotografía profesional</span><small>Oscar Bonilla</small></div><p class="profile-credential">Miembro del Colegio de Ciencias Económicas de Costa Rica · Carné profesional 030485</p></div>
+      <div class="profile-card"><img class="profile-photo" src="/oscar-bonilla.jpg.png" alt="Oscar Bonilla, especialista en capacitación empresarial, IA aplicada y auditoría forense" width="500" height="625" loading="lazy"><p class="profile-credential">Miembro del Colegio de Ciencias Económicas de Costa Rica · Carné profesional 030485</p></div>
       <div class="about-copy"><span class="eyebrow">Mi trayectoria</span><h2>Perfil profesional</h2><p>Soy profesional en Ciencias Económicas y miembro del Colegio de Ciencias Económicas de Costa Rica, carné 030485. Mi trayectoria en el sector financiero se complementa con experiencia en banca, marketing digital, analítica de datos, inteligencia artificial aplicada y auditoría financiera forense. Diseño e imparto capacitaciones para que equipos y organizaciones comprendan herramientas, interpreten información y la apliquen en situaciones reales. Mi enfoque es cercano, práctico y adaptado a las necesidades de cada grupo.</p><div class="pills"><span class="pill">Capacitación empresarial</span><span class="pill">IA aplicada</span><span class="pill">Marketing digital</span><span class="pill">Analítica</span><span class="pill">Finanzas</span><span class="pill">Auditoría forense</span></div></div>
     </div>
   </section>
