@@ -48,6 +48,22 @@
 .portrait-placeholder span{font-weight:700}.portrait-placeholder small{font-size:.8rem;color:#c5ceda}
 .profile-card:after{content:none}.profile-card{display:flex;flex-direction:column;gap:16px}.profile-credential{color:#c5ceda;font-size:.82rem;margin:0}
 .service-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.service{min-height:0}.service-num{margin-bottom:18px}
+.portfolio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.portfolio-card{padding:28px;background:#fff;border:1px solid #e9e5dc;min-width:0}
+.portfolio-card h3{color:var(--navy);margin-bottom:12px}
+.portfolio-card p{font-size:.94rem}
+.portfolio-card details{margin-top:18px;border-top:1px solid var(--line);padding-top:13px}
+.portfolio-card summary{cursor:pointer;list-style:none;color:var(--navy);font-weight:700;font-size:.9rem;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.portfolio-card summary::-webkit-details-marker{display:none}
+.portfolio-card summary:after{content:"+";color:var(--gold);font-size:1.35rem;line-height:1}
+.portfolio-card details[open] summary:after{content:"−"}
+.portfolio-card details ul,.portfolio-card details ol{padding-left:20px;color:#566173;font-size:.88rem}
+.portfolio-card details li{margin:8px 0}
+.portfolio-note{margin-top:12px!important;padding:14px;background:var(--ivory);font-size:.86rem!important}
+.portfolio-cta{display:flex;justify-content:space-between;align-items:center;gap:25px;padding:25px 28px;margin-top:24px;background:var(--navy);color:#fff}
+.portfolio-cta p{margin:0;color:#d8dee7}.portfolio-cta p strong{color:#fff}
+@media(max-width:700px){.portfolio-grid{grid-template-columns:1fr}.portfolio-card{padding:23px}.portfolio-cta{align-items:stretch;flex-direction:column;padding:23px}.portfolio-cta .btn{width:100%}}
+
 .method-strip{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0}.method-strip p{margin:0;color:#4e5968;font-size:.95rem}.method-strip strong{color:var(--navy)}
 .evidence-block{margin-top:42px}.evidence-block h3,.testimonials h3{font-family:Manrope,sans-serif;font-size:1.25rem;margin-bottom:16px;color:white}
 .evidence-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.evidence-card,.testimonial-card{padding:22px;border:1px solid rgba(198,166,107,.35);background:rgba(255,255,255,.035)}.evidence-card strong{display:block;color:var(--gold);font-size:.9rem;margin:8px 0}.evidence-kicker{display:block;color:#c5ceda;font-size:.68rem;letter-spacing:.08em;font-weight:700}.evidence-card p{line-height:1.6}.evidence-card p{font-size:.86rem;color:#d5dce5;margin-bottom:0}
@@ -113,15 +129,51 @@
   </section>
   <section class="section services" id="servicios">
     <div class="container">
-      <div class="section-head"><span class="eyebrow">Servicios</span><h2>Capacitación y asesoría con aplicación práctica.</h2><p>Contenidos ajustados a los objetivos del equipo, con ejercicios y herramientas que se pueden llevar al trabajo diario.</p></div>
-      <div class="service-grid">
-        <article class="service"><span class="service-num">01 / FORMACIÓN</span><h3>Capacitación e inteligencia artificial aplicada</h3><p>Talleres prácticos para incorporar IA, comunicar datos y fortalecer habilidades digitales.</p><ul><li>Taller de IA para marketing · 4 horas</li><li>Data Storytelling y gráficas efectivas · 4 horas</li><li>Educación financiera para emprendimientos · 4 horas</li></ul></article>
-        <article class="service"><span class="service-num">02 / CRECIMIENTO DIGITAL</span><h3>Marketing digital y analítica</h3><p>Campañas y medición alineadas con objetivos de negocio, audiencias y resultados.</p><ul><li>Taller de Google Ads o Meta Ads · 4 horas</li><li>KPIs, analítica y reportes ejecutivos</li><li>Optimización de conversiones y presupuesto</li></ul></article>
-        <article class="service"><span class="service-num">03 / FINANZAS Y CONTROL</span><h3>Finanzas y auditoría forense</h3><p>Formación para comprender riesgos, documentar hallazgos y analizar información financiera y digital.</p><ul><li>Taller de auditoría forense · 4 horas</li><li>Prevención de fraude, OSINT y evidencia digital</li><li>Finanzas personales y medios de pago</li></ul></article>
+      <div class="section-head"><span class="eyebrow">Capacitaciones y conferencias</span><h2>Conocimiento práctico para los retos de hoy.</h2><p>Programas, talleres y conferencias para empresas, instituciones públicas, colegios profesionales y equipos de trabajo. Cada propuesta se puede adaptar a los objetivos, el nivel de conocimiento y las necesidades de la organización.</p></div>
+      <div class="portfolio-grid">
+        <article class="portfolio-card">
+          <span class="service-num">01 / MARKETING DIGITAL</span><h3>Marketing digital, redes sociales y analítica</h3><p>Desarrollo de capacidades para planificar estrategias digitales, crear contenido, comunicar datos y mejorar resultados.</p>
+          <details><summary>Ver programas y temas</summary><ul>
+            <li><strong>Conviértete en especialista en Marketing Digital y Social Media</strong> — programa modular, 16 horas.</li>
+            <li><strong>Data Storytelling y gráficas efectivas</strong> — 16 horas.</li>
+            <li><strong>Manejo de herramientas tecnológicas para educadores</strong> — 16 horas.</li>
+            <li><strong>Tips y consejos para vender por medio de Meta</strong> — 8 horas.</li>
+            <li>Google Ads, Meta Ads, indicadores de desempeño (KPI), analítica digital y optimización de conversiones, según los objetivos de la organización.</li>
+            <li><strong>Minería de datos</strong> — charla o capacitación.</li>
+          </ul></details>
+        </article>
+        <article class="portfolio-card">
+          <span class="service-num">02 / INTELIGENCIA ARTIFICIAL</span><h3>IA aplicada a negocios y marketing</h3><p>Uso estratégico y práctico de herramientas de inteligencia artificial para crear contenido, comprender audiencias, optimizar campañas y apoyar decisiones.</p>
+          <details><summary>Ver programas y temas</summary><ul>
+            <li><strong>Inteligencia Artificial Aplicada al Marketing Digital I</strong> — 16 horas.</li>
+            <li><strong>Inteligencia Artificial Aplicada al Marketing Digital II</strong> — 16 horas.</li>
+            <li><strong>Inteligencia artificial en los negocios y la economía</strong> — charla adaptable.</li>
+            <li><strong>Inteligencia artificial</strong> — charla introductoria o temática según las necesidades del público.</li>
+          </ul><p class="portfolio-note"><strong>Programa destacado · 16 horas:</strong> estrategia y objetivos de marketing; buyer persona y recorrido del cliente; creación de contenido con IA; publicidad digital con Meta Ads y Google Ads; interpretación de CTR, CPC y CPA; análisis de resultados y optimización de campañas. Incluye cuatro sesiones sincrónicas y actividades prácticas.</p></details>
+        </article>
+        <article class="portfolio-card">
+          <span class="service-num">03 / INVESTIGACIÓN FORENSE</span><h3>Auditoría financiera forense e investigación digital</h3><p>Formación en análisis financiero, investigación de irregularidades, evidencia digital y comprensión de riesgos asociados a delitos económicos y tecnológicos.</p>
+          <details><summary>Ver programas y módulos</summary><ul>
+            <li><strong>Conceptos y generalidades de auditoría financiera forense</strong> — 16 horas.</li>
+            <li><strong>Conceptos y generalidades de informática forense</strong> — 16 horas.</li>
+            <li><strong>Redes sociales aplicadas a la investigación forense</strong> — 16 horas.</li>
+            <li><strong>Programa Modular de Auditoría Financiera Forense</strong> — 75 horas, organizado en cinco módulos:</li>
+          </ul><ol><li>Análisis económico de la corrupción.</li><li>Conceptos y generalidades de auditoría financiera forense.</li><li>Legitimación de capitales y delitos tecnológicos.</li><li>Proceso de investigación forense.</li><li>Psicología forense e informes periciales.</li></ol></details>
+        </article>
+        <article class="portfolio-card">
+          <span class="service-num">04 / FINANZAS Y HABILIDADES</span><h3>Finanzas, bienestar y habilidades profesionales</h3><p>Charlas y experiencias participativas para fortalecer el bienestar financiero, la toma de decisiones y las relaciones en el entorno laboral.</p>
+          <details><summary>Ver charlas y experiencias</summary><ul>
+            <li><strong>Aprendé a mejorar tus finanzas.</strong></li>
+            <li><strong>¿Tienen importancia mis emociones en las finanzas?</strong></li>
+            <li><strong>Salud financiera e inteligencia financiera.</strong></li>
+            <li><strong>Habilidades blandas.</strong></li>
+            <li><strong>Risas y Colones</strong> — espectáculo de educación financiera con humor, con duración y formato adaptables a cada organización.</li>
+          </ul><p class="portfolio-note">Las charlas se pueden ajustar a la audiencia, el tiempo disponible y los objetivos de la actividad. Entre sus posibles beneficios están promover el bienestar financiero, fortalecer las relaciones de trabajo y apoyar la productividad.</p></details>
+        </article>
       </div>
+      <div class="portfolio-cta"><p><strong>¿Buscás una capacitación para tu equipo?</strong><br>Contame el objetivo, el público y la duración que tenés en mente. Prepararé una propuesta acorde con las necesidades de tu organización.</p><a class="btn btn-primary" href="#contacto">Solicitar una propuesta ↗</a></div>
     </div>
   </section>
-  
   <section class="section clients" id="experiencia">
     <div class="container"><div class="section-head"><span class="eyebrow">Experiencia y colaboración</span><h2>Una trayectoria en distintos sectores.</h2><p>Experiencias profesionales, académicas y de colaboración vinculadas a organizaciones de los sectores financiero, público, educativo, empresarial y de comunicación.</p></div>
       <div class="logo-grid" aria-label="Organizaciones vinculadas a la trayectoria profesional">
@@ -136,12 +188,6 @@
         <div class="logo-cell"><img src="/logos/tdmas.png" alt="TD Más" loading="lazy" decoding="async"></div>
         <div class="logo-cell"><img src="/logos/uh.png" alt="Universidad Hispanoamericana" loading="lazy" decoding="async"></div>
       </div>
-    </div>
-  </section>
-  <section class="section training" id="docencia">
-    <div class="container"><div class="section-head"><span class="eyebrow">Docencia y conferencias</span><h2>Temáticas de formación</h2><p>Programas y talleres con enfoque teórico-práctico, casos y herramientas de uso profesional.</p></div>
-      <div class="topic-list"><div class="topic">IA aplicada al marketing digital y los negocios</div><div class="topic">Data Storytelling y visualización de datos</div><div class="topic">Google Ads y Meta Ads</div><div class="topic">KPIs, analítica y medición digital</div><div class="topic">Auditoría financiera forense</div><div class="topic">Fraude, OSINT e informática forense</div><div class="topic">Educación financiera y emprendimiento</div><div class="topic">Medios de pago y canales bancarios digitales</div></div>
-      <div class="evidence-block"><h3>Experiencia y valoración institucional</h3><p class="testimonial-note">Referencias basadas en constancias y evaluaciones reales; no son citas textuales ni testimonios inventados.</p><div class="evidence-grid"><article class="evidence-card"><span class="evidence-kicker">AUDITORÍA FORENSE · 2025</span><strong>COOPECAJA R.L.</strong><p>Constancia de participación como instructor y facilitador especializado en el Programa Modular de Auditoría Forense, del 26 de mayo al 30 de octubre de 2025.</p></article><article class="evidence-card"><span class="evidence-kicker">EDUCACIÓN FINANCIERA · DESDE 2023</span><strong>Banco de Costa Rica</strong><p>Constancia como facilitador de Finanzas en Acción. El curso “Tu banca a un clic” registró 56 horas efectivas en 2025.</p></article><article class="evidence-card"><span class="evidence-kicker">DATA STORYTELLING · 2026</span><strong>Colegio de Ciencias Económicas de Costa Rica</strong><p>Reporte de evaluación del curso con una calificación final de 95,3/100 y 19 respuestas de participantes.</p></article></div></div>
     </div>
   </section>
   <section class="section" id="formacion">
@@ -159,7 +205,7 @@
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <div class="field"><label for="name">Nombre</label><input id="name" name="name" autocomplete="name" required placeholder="Tu nombre"></div>
           <div class="field"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="nombre@empresa.com"></div>
-          <div class="field"><label for="interest">¿Qué te interesa?</label><select id="interest" name="interest" required><option value="">Seleccioná una opción</option><option>Capacitación e IA aplicada</option><option>Marketing digital y analítica</option><option>Finanzas y auditoría forense</option><option>Conferencia o taller</option><option>Otro tema</option></select></div>
+          <div class="field"><label for="interest">¿Qué te interesa?</label><select id="interest" name="interest" required><option value="">Seleccioná una opción</option><option>Marketing digital, redes sociales y analítica</option><option>Inteligencia artificial aplicada a negocios y marketing</option><option>Auditoría financiera forense e investigación digital</option><option>Finanzas, bienestar y habilidades profesionales</option><option>Conferencia o taller a la medida</option><option>Otro tema</option></select></div>
           <div class="field"><label for="message">Mensaje</label><textarea id="message" name="message" required placeholder="Contame un poco sobre tu necesidad..."></textarea></div>
           <button class="btn btn-primary" type="submit">Enviar consulta ↗</button><p class="form-note">Tus datos se utilizarán únicamente para responder a esta consulta. Evitá incluir información financiera o sensible.</p>
         </form>
