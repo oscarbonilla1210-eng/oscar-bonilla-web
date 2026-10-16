@@ -1,0 +1,3 @@
+[build]
+  command = "mkdir -p logos && unzip -o logos.zip -d logos"
+  publish = "."
