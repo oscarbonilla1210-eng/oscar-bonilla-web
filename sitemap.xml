@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://oscarbonillaconsultor.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://oscarbonillaconsultor.com/blog/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://oscarbonillaconsultor.com/blog/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://oscarbonillaconsultor.com/blog/articulos/ia-empresa-usos-practicos/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://oscarbonillaconsultor.com/blog/articulos/medir-campanas-google-ads-meta-ads/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://oscarbonillaconsultor.com/blog/articulos/presupuesto-personal-costa-rica/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
