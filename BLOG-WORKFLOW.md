@@ -16,6 +16,14 @@ Los artículos se preparan con ChatGPT y se incorporan al repositorio GitHub `os
 - Capacitación empresarial, conferencias e IA aplicada
 - Marketing digital y Ads
 - Finanzas y auditoría forense
+- Ofertas laborales en San José (sección informativa enlazada a grupo de WhatsApp)
+
+## Primera tanda de artículos SEO
+- `blog/articulos/ia-empresa-usos-practicos/`: siete usos prácticos de IA en empresas.
+- `blog/articulos/medir-campanas-google-ads-meta-ads/`: métricas y lectura de campañas digitales.
+- `blog/articulos/presupuesto-personal-costa-rica/`: guía de presupuesto personal contextualizada para Costa Rica.
+
+Cada página incluye canonical, metadatos Open Graph/Twitter, imagen con texto alternativo y datos estructurados `BlogPosting`. Las imágenes de portada se sirven desde URLs de Unsplash; antes de futuras publicaciones, verificar su disponibilidad y licencia/atribución aplicable.
 
 ## Criterios editoriales
 - Priorizar experiencia práctica, ejemplos propios y recomendaciones verificables.
