@@ -103,6 +103,8 @@
     .experience-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
     .experience-card{min-width:0;padding:22px;background:#fff;border:1px solid var(--line);box-shadow:0 8px 28px rgba(16,29,50,.045)}
     .experience-media{width:100%;margin:0 0 20px;overflow:hidden;background:var(--ivory);min-height:100px}
+    .experience-image,.experience-video{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#101D32;margin:0 0 20px;border:0}
+    .experience-video{aspect-ratio:16/9;object-fit:contain}
     .experience-media .instagram-media{width:100%!important;min-width:0!important;max-width:540px!important;margin:0 auto!important;border:0!important;box-shadow:none!important}
     .experience-card h3{margin-top:8px}
     .experience-card>a{display:inline-block;margin-top:8px;color:#8b6b37;font-size:.88rem;font-weight:700;text-underline-offset:4px}
@@ -215,28 +217,34 @@
         <div class="section-head"><span class="eyebrow">Experiencias destacadas</span><h2>Formación, producción y comunicación.</h2><p>Una selección de experiencias que refleja mi trabajo como facilitador, productor y entrevistador.</p></div>
         <div class="experience-grid">
           <article class="experience-card">
-            <div class="experience-media" aria-label="Vista previa de Instagram: Entrevista a Javier Zanetti"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C3L5ZWuRTCA/" data-instgrm-version="14"><a href="https://www.instagram.com/p/C3L5ZWuRTCA/" target="_blank" rel="noopener noreferrer">Ver publicación: Entrevista a Javier Zanetti</a></blockquote></div>
-            <div class="experience-media" aria-label="Vista previa de Instagram: Gira Colegial"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DB1yE7uP0F1/" data-instgrm-version="14"><a href="https://www.instagram.com/p/DB1yE7uP0F1/" target="_blank" rel="noopener noreferrer">Ver publicación: Gira Colegial</a></blockquote></div>
-            <div class="experience-media" aria-label="Vista previa de Instagram: Tu Banca a un Clic"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DK2Gk8dMrYY/?img_index=1" data-instgrm-version="14"><a href="https://www.instagram.com/p/DK2Gk8dMrYY/?img_index=1" target="_blank" rel="noopener noreferrer">Ver publicación: Tu Banca a un Clic</a></blockquote></div>
+            <img class="experience-image" src="/tu-banca-a-un-clic.jpg" alt="Actividad Tu Banca a un Clic, iniciativa de educación financiera" loading="lazy" decoding="async">
             <span class="eyebrow">Educación financiera</span>
             <h3>Tu Banca a un Clic</h3>
-            <p>Participé como facilitador e impartí una charla para personas adultas mayores, en el marco de esta iniciativa de inclusión y educación financiera impulsada por el Banco de Costa Rica y la Asociación Bancaria Costarricense.</p>
+            <p>Participé como facilitador en una charla para personas adultas mayores, en el marco de esta iniciativa de inclusión y educación financiera impulsada por el Banco de Costa Rica y la Asociación Bancaria Costarricense.</p>
             <a href="https://www.instagram.com/p/DK2Gk8dMrYY/?img_index=1" target="_blank" rel="noopener noreferrer">Ver publicación del BCR ↗</a>
           </article>
           <article class="experience-card">
+            <video class="experience-video" controls preload="none" playsinline poster="/gira-colegial-poster.jpg" aria-label="Video de la Gira Colegial">
+              <source src="/gira-colegial.mp4" type="video/mp4">
+              Tu navegador no puede reproducir este video.
+            </video>
             <span class="eyebrow">Producción educativa</span>
             <h3>Gira Colegial</h3>
             <p>Colaboré como productor de la gira, con participación en el guion y el desarrollo de la experiencia educativa dirigida a estudiantes, vinculada al Programa Finanzas en Acción.</p>
             <a href="https://www.instagram.com/p/DB1yE7uP0F1/" target="_blank" rel="noopener noreferrer">Ver publicación del BCR ↗</a>
           </article>
           <article class="experience-card">
+            <video class="experience-video" controls preload="none" playsinline poster="/entrevista-zanetti-poster.jpg" aria-label="Video de la entrevista a Javier Zanetti">
+              <source src="/entrevista-javier-zanetti.mp4" type="video/mp4">
+              Tu navegador no puede reproducir este video.
+            </video>
             <span class="eyebrow">Comunicación deportiva</span>
             <h3>Entrevista a Javier Zanetti</h3>
             <p>Entrevisté directamente al exfutbolista argentino Javier Zanetti, una experiencia que reúne comunicación, producción audiovisual y contenido deportivo.</p>
             <a href="https://www.instagram.com/p/C3L5ZWuRTCA/" target="_blank" rel="noopener noreferrer">Ver referencia en Instagram ↗</a>
           </article>
         </div>
-        <p class="experience-note">Las publicaciones enlazadas pertenecen a sus respectivas cuentas originales. Las descripciones resumen mi participación en cada experiencia.</p>
+        <p class="experience-note">Los videos y la fotografía se alojan en el sitio. Las publicaciones enlazadas permiten consultar las referencias originales.</p>
       </div>
     </div>
   </section>
