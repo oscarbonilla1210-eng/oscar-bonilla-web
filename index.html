@@ -99,6 +99,16 @@
 
 
 .featured-experiences{margin-top:52px;padding-top:38px;border-top:1px solid var(--line)}.featured-experiences .section-head{margin-bottom:24px}.experience-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.experience-card{display:flex;flex-direction:column;align-items:flex-start;padding:25px;border:1px solid var(--line);background:#fff;border-radius:4px}.experience-card .eyebrow{font-size:.72rem}.experience-card h3{font-family:Manrope,sans-serif;color:var(--navy);font-size:1.15rem;line-height:1.35;margin:12px 0}.experience-card p{font-size:.94rem;color:#4e5968}.experience-card a{margin-top:auto;padding-top:10px;color:var(--navy);font-weight:700;text-decoration:underline;text-underline-offset:4px}.experience-note{font-size:.82rem;color:#667085;margin-top:18px}@media(max-width:800px){.experience-grid{grid-template-columns:1fr}}
+
+    .experience-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .experience-card{min-width:0;padding:22px;background:#fff;border:1px solid var(--line);box-shadow:0 8px 28px rgba(16,29,50,.045)}
+    .experience-media{width:100%;margin:0 0 20px;overflow:hidden;background:var(--ivory);min-height:100px}
+    .experience-media .instagram-media{width:100%!important;min-width:0!important;max-width:540px!important;margin:0 auto!important;border:0!important;box-shadow:none!important}
+    .experience-card h3{margin-top:8px}
+    .experience-card>a{display:inline-block;margin-top:8px;color:#8b6b37;font-size:.88rem;font-weight:700;text-underline-offset:4px}
+    .experience-note{font-size:.82rem;color:#737d8b;margin-top:18px}
+    @media(max-width:900px){.experience-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:600px){.experience-grid{grid-template-columns:1fr}.experience-card{padding:18px}}
 </style>
 </head>
 <body>
@@ -205,6 +215,9 @@
         <div class="section-head"><span class="eyebrow">Experiencias destacadas</span><h2>Formación, producción y comunicación.</h2><p>Una selección de experiencias que refleja mi trabajo como facilitador, productor y entrevistador.</p></div>
         <div class="experience-grid">
           <article class="experience-card">
+            <div class="experience-media" aria-label="Vista previa de Instagram: Entrevista a Javier Zanetti"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C3L5ZWuRTCA/" data-instgrm-version="14"><a href="https://www.instagram.com/p/C3L5ZWuRTCA/" target="_blank" rel="noopener noreferrer">Ver publicación: Entrevista a Javier Zanetti</a></blockquote></div>
+            <div class="experience-media" aria-label="Vista previa de Instagram: Gira Colegial"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DB1yE7uP0F1/" data-instgrm-version="14"><a href="https://www.instagram.com/p/DB1yE7uP0F1/" target="_blank" rel="noopener noreferrer">Ver publicación: Gira Colegial</a></blockquote></div>
+            <div class="experience-media" aria-label="Vista previa de Instagram: Tu Banca a un Clic"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DK2Gk8dMrYY/?img_index=1" data-instgrm-version="14"><a href="https://www.instagram.com/p/DK2Gk8dMrYY/?img_index=1" target="_blank" rel="noopener noreferrer">Ver publicación: Tu Banca a un Clic</a></blockquote></div>
             <span class="eyebrow">Educación financiera</span>
             <h3>Tu Banca a un Clic</h3>
             <p>Participé como facilitador e impartí una charla para personas adultas mayores, en el marco de esta iniciativa de inclusión y educación financiera impulsada por el Banco de Costa Rica y la Asociación Bancaria Costarricense.</p>
@@ -288,5 +301,6 @@
   document.getElementById('year').textContent=new Date().getFullYear();
   // El formulario de contacto se procesa mediante FormSubmit.
 </script>
+<script async src="https://www.instagram.com/embed.js"></script>
 </body>
 </html>
