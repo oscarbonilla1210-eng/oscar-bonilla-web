@@ -1,0 +1,11 @@
+Material optimizado para la sección «Experiencias destacadas» de oscarbonillaconsultor.com
+
+Archivos:
+- tu-banca-a-un-clic.jpg: fotografía principal.
+- gira-colegial.mp4: video optimizado de la gira colegial.
+- gira-colegial-poster.jpg: portada del video de gira colegial.
+- entrevista-javier-zanetti.mp4: video optimizado de la entrevista.
+- entrevista-zanetti-poster.jpg: portada del video de entrevista.
+- entrevista-javier-zanetti.jpg: fotografía complementaria con Javier Zanetti.
+
+Los videos se recodificaron en MP4/H.264 con resolución máxima de 1280 px y fast-start para facilitar la reproducción web. Revisar el contenido y el encuadre antes de publicar.
