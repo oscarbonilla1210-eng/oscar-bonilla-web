@@ -72,6 +72,17 @@
 @media(max-width:900px){.service-grid{grid-template-columns:1fr 1fr}.evidence-grid{grid-template-columns:1fr}.hero-photo-placeholder{max-width:220px}}
 @media(max-width:700px){.service-grid{grid-template-columns:1fr}.testimonial-grid{grid-template-columns:1fr}.hero-photo-placeholder{width:115px;aspect-ratio:1/1;max-width:none}.hero-side{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:16px}.portrait-placeholder{min-height:220px}.method-strip{padding:16px 0}}
 .footer{background:#0b1424;color:#b9c2cf;padding:25px 0;font-size:.8rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer strong{color:white}.back-top{color:var(--gold)}
+    .video-layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.75fr);gap:32px;align-items:center}
+    .video-frame{position:relative;width:100%;aspect-ratio:16/9;background:#101D32;overflow:hidden;box-shadow:0 16px 40px rgba(16,29,50,.14)}
+    .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    .video-details h3{font-size:1.55rem;color:var(--navy);margin:12px 0}
+    .video-kicker{font-size:.7rem;letter-spacing:.1em;font-weight:800;color:#8b6b37}
+    .video-duration{font-size:.88rem;font-weight:700;color:var(--navy)}
+    .channel-cta{margin-top:28px;padding:25px 28px;background:var(--navy);display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .channel-cta strong{color:#fff;font-family:Manrope,sans-serif;font-size:1.05rem}
+    .channel-cta p{margin:5px 0 0;color:#c5ceda;font-size:.9rem}
+    .channel-cta .btn-outline{flex:none}
+    @media(max-width:700px){.video-layout{grid-template-columns:1fr;gap:24px}.channel-cta{align-items:stretch;flex-direction:column;padding:22px}.channel-cta .btn{width:100%}}
     .whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:9999;display:inline-flex;align-items:center;gap:10px;padding:13px 18px;background:#16865a;color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:999px;box-shadow:0 8px 26px rgba(0,0,0,.2);font-size:.9rem;font-weight:700}
     .whatsapp-float:hover{background:#116b47;transform:translateY(-2px)}
     .whatsapp-float svg{width:22px;height:22px;flex:none}
@@ -94,7 +105,7 @@
     <a class="brand" href="#inicio" aria-label="Oscar Bonilla, inicio"><img class="brand-photo" src="/oscar-bonilla.jpg.png" alt="Oscar Bonilla" width="42" height="42"><span>Oscar Bonilla<small>Capacitación · IA aplicada · Marketing digital</small></span></a>
     <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">Menú</button>
     <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
-      <a href="#perfil">Perfil</a><a href="#servicios">Servicios</a><a href="#experiencia">Experiencia</a><a href="#formacion">Formación</a><a href="blog/">Blog</a>
+      <a href="#perfil">Perfil</a><a href="#servicios">Servicios</a><a href="#experiencia">Experiencia</a><a href="#formacion">Formación</a><a href="#medios">En medios</a><a href="blog/">Blog</a><a href="https://www.youtube.com/@oscarbonillaconsultor" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
     </nav>
     <a class="nav-cta" href="#contacto">Conversemos ↗</a>
   </div>
@@ -106,7 +117,7 @@
         <span class="eyebrow">Capacitación empresarial · Conferencias · IA aplicada</span>
         <h1>Capacitación, IA aplicada y marketing digital para <span>equipos y empresas.</span></h1>
         <p class="hero-copy">Soy Oscar Bonilla, capacitador, conferencista y consultor en Costa Rica. Imparto talleres y acompaño a equipos en inteligencia artificial aplicada, marketing digital, analítica, finanzas y auditoría forense, con contenidos claros y ejercicios basados en situaciones reales.</p>
-        <div class="hero-actions"><a class="btn btn-primary" href="#servicios">Explorar servicios ↗</a><a class="btn btn-outline" href="#perfil">Conocer mi trayectoria</a></div>
+        <div class="hero-actions"><a class="btn btn-primary" href="#servicios">Explorar servicios ↗</a><a class="btn btn-outline" href="#perfil">Conocer mi trayectoria</a><a class="btn btn-outline" href="https://www.youtube.com/@oscarbonillaconsultor" target="_blank" rel="noopener noreferrer">Mi canal de YouTube ↗</a></div>
       </div>
       <aside class="hero-side" aria-label="Fotografía profesional de Oscar Bonilla">
         <img class="hero-photo" src="/oscar-bonilla.jpg.png" alt="Oscar Bonilla, capacitador y consultor profesional en Costa Rica" width="500" height="625" fetchpriority="high">
@@ -187,6 +198,31 @@
         <div class="logo-cell"><img src="/logos/canal%2013.jpg" alt="Canal 13 · SINART" loading="lazy" decoding="async"></div>
         <div class="logo-cell"><img src="/logos/tdmas.png" alt="TD Más" loading="lazy" decoding="async"></div>
         <div class="logo-cell"><img src="/logos/uh.png" alt="Universidad Hispanoamericana" loading="lazy" decoding="async"></div>
+      </div>
+    </div>
+  </section>
+  <section class="section media-section" id="medios">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">En medios</span>
+        <h2>Educación financiera: prepará tus metas para 2027.</h2>
+        <p>Entrevista en Canal 13 sobre presupuesto, ahorro, gastos hormiga y aguinaldo en Costa Rica. Ideas prácticas para organizar tus finanzas y tomar mejores decisiones.</p>
+      </div>
+      <div class="video-layout">
+        <div class="video-frame">
+          <iframe src="https://www.youtube-nocookie.com/embed/oWh2z_zAaoI" title="Oscar Bonilla en Canal 13: educación financiera, presupuesto, ahorro y metas para 2027" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-details">
+          <span class="video-kicker">ENTREVISTA · CANAL 13 · COSTA RICA</span>
+          <h3>Planificá tus finanzas con mejores herramientas.</h3>
+          <p>Conversación sobre cómo establecer metas financieras, elaborar un presupuesto, reconocer los gastos hormiga y aprovechar responsablemente el aguinaldo.</p>
+          <p class="video-duration">Duración del video: 49:44</p>
+          <a class="btn btn-primary" href="https://youtu.be/oWh2z_zAaoI" target="_blank" rel="noopener noreferrer">Ver en YouTube ↗</a>
+        </div>
+      </div>
+      <div class="channel-cta">
+        <div><strong>Más tutoriales, herramientas y contenido práctico.</strong><p>Visitá mi canal para aprender sobre inteligencia artificial aplicada, marketing digital y finanzas.</p></div>
+        <a class="btn btn-outline" href="https://www.youtube.com/@oscarbonillaconsultor" target="_blank" rel="noopener noreferrer">Suscribite a mi canal ↗</a>
       </div>
     </div>
   </section>
